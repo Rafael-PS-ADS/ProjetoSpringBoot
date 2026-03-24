@@ -8,7 +8,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 
-public class AbstractDAO , PK extends Serializable> {
+public class AbstractDAO<T, PK extends Serializable> {
 
     @SuppressWarnings("unchecked")
     private final Class<T> entityClass = (Class<T>) ((ParameterizedType)
